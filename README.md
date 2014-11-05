@@ -2,7 +2,7 @@ promise-polyfill-test
 =====================
 
 Testing promise polyfill. Also running bower install from prepublish in package.json.
-Assumes glup is installed globally (npm i -g gulp).
+Assumes gulp is installed globally (npm i -g gulp).
 
 ```bash
 git clone git@github.com:batfink/promise-polyfill-test
