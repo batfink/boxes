@@ -7,12 +7,8 @@ html, body {
 }
 
 body {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
     font-family: HelveticaNeue;
 }
@@ -20,8 +16,6 @@ body {
 
 
 .boxes, main {
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
     min-height: 100%;
     padding-right: 20px;
@@ -37,11 +31,7 @@ h1, p {
 header, footer {
     background: silver;
     padding: 20px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
