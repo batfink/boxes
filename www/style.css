@@ -1,9 +1,87 @@
-body {
-    background: silver;
-    font-family: Helvetica;
-    margin: 40px;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    font-weight: normal;
+.boxes {
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.box {
+    background: orange;
+    padding: 20px;
+    font-family: HelveticaNeue;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* tiny */
+@media screen and (max-width: 480px) {
+
+}
+
+/* from small and up */
+@media screen and (min-width: 481px) {
+    .box {
+        float:left;
+    }
+}
+
+/* small-only */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .box {
+        width: calc(50% - 20px);
+    }
+    .box:nth-child(2n-1) {
+        background: maroon;
+        clear: left;
+    }
+}
+
+/* from medium and up */
+@media screen and (min-width: 769px) {
+
+}
+
+/* medium-only */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .box {
+        width: calc(33% - 20px);
+    }
+    .box:nth-child(3n-2) {
+        clear: left;
+        background: maroon;
+    }
+}
+
+/* from large and up */
+@media screen and (min-width: 1025px) {
+
+}
+
+
+/* large only */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .box {
+        width: calc(25% - 20px);
+    }
+    .box:nth-child(4n-3) {
+        clear: left;
+        background: maroon;
+    }
+}
+
+/* huge */
+@media screen and (min-width: 1281px) {
+    .box {
+        width: calc(20% - 20px);
+    }
+    .box:nth-child(5n+1) {
+        clear: left;
+        background: maroon;
+    }
 }

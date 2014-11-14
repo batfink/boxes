@@ -1,4 +1,4 @@
 boxes
 =====
 
-A css grid experiment
+A simple css grid experiment using nth-child and calc()

@@ -1,11 +1,26 @@
-var promise = new Promise(function(resolve, reject) {
-    resolve('tjobing');
-});
+(function () {
 
-var p = document.getElementsByTagName('p')[0];
+    var parent = document.createElement('div');
+    parent.classList.add('boxes');
 
-function updatePage() {
-    p.innerText += ' Sure, baby!';
-};
+    for (var i = 1, stop = 14; i < stop; i++) {
 
-promise.then(updatePage);
+        var txt = document.createTextNode('Boks ' + ( i < 10 ? '0' + i : i ));
+
+
+        var div = document.createElement('div');
+        div.classList.add('box');
+        div.appendChild(txt);
+
+        if (i === 2) {
+            div.appendChild(document.createElement('br'));
+            div.appendChild(document.createTextNode('Denne boksen har mer tekst enn de andre boksene fordi sånn er det bare'));
+        }
+
+        parent.appendChild(div);
+    };
+
+    document.body.appendChild(parent);
+
+
+})();
